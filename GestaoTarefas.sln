@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32228.430
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GestaoTarefas.WinApp", "GestaoTarefas.WinApp\GestaoTarefas.WinApp.csproj", "{1C0E39AE-C25B-40FC-8653-EF3367E8DCBA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1C0E39AE-C25B-40FC-8653-EF3367E8DCBA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C0E39AE-C25B-40FC-8653-EF3367E8DCBA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C0E39AE-C25B-40FC-8653-EF3367E8DCBA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C0E39AE-C25B-40FC-8653-EF3367E8DCBA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E41F6238-4BBD-4474-A5BE-41CD53E2DD03}
+	EndGlobalSection
+EndGlobal
