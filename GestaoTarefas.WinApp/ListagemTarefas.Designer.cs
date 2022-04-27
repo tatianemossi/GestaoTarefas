@@ -39,11 +39,11 @@
             // btnInserir
             // 
             this.btnInserir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.btnInserir.Font = new System.Drawing.Font("Yu Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnInserir.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.btnInserir.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnInserir.ForeColor = System.Drawing.Color.Purple;
             this.btnInserir.Location = new System.Drawing.Point(21, 23);
             this.btnInserir.Name = "btnInserir";
-            this.btnInserir.Size = new System.Drawing.Size(124, 67);
+            this.btnInserir.Size = new System.Drawing.Size(140, 45);
             this.btnInserir.TabIndex = 0;
             this.btnInserir.Text = "Inserir";
             this.btnInserir.UseVisualStyleBackColor = false;
@@ -52,11 +52,11 @@
             // btnEditar
             // 
             this.btnEditar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.btnEditar.Font = new System.Drawing.Font("Yu Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnEditar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.btnEditar.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnEditar.ForeColor = System.Drawing.Color.Purple;
             this.btnEditar.Location = new System.Drawing.Point(163, 23);
             this.btnEditar.Name = "btnEditar";
-            this.btnEditar.Size = new System.Drawing.Size(124, 67);
+            this.btnEditar.Size = new System.Drawing.Size(140, 45);
             this.btnEditar.TabIndex = 1;
             this.btnEditar.Text = "Editar";
             this.btnEditar.UseVisualStyleBackColor = false;
@@ -65,11 +65,11 @@
             // btnExcluir
             // 
             this.btnExcluir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.btnExcluir.Font = new System.Drawing.Font("Yu Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnExcluir.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.btnExcluir.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnExcluir.ForeColor = System.Drawing.Color.Purple;
             this.btnExcluir.Location = new System.Drawing.Point(309, 23);
             this.btnExcluir.Name = "btnExcluir";
-            this.btnExcluir.Size = new System.Drawing.Size(124, 67);
+            this.btnExcluir.Size = new System.Drawing.Size(140, 45);
             this.btnExcluir.TabIndex = 2;
             this.btnExcluir.Text = "Excluir";
             this.btnExcluir.UseVisualStyleBackColor = false;
@@ -78,11 +78,11 @@
             // btnCadastrarItens
             // 
             this.btnCadastrarItens.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.btnCadastrarItens.Font = new System.Drawing.Font("Yu Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnCadastrarItens.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.btnCadastrarItens.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnCadastrarItens.ForeColor = System.Drawing.Color.Purple;
             this.btnCadastrarItens.Location = new System.Drawing.Point(452, 23);
             this.btnCadastrarItens.Name = "btnCadastrarItens";
-            this.btnCadastrarItens.Size = new System.Drawing.Size(144, 67);
+            this.btnCadastrarItens.Size = new System.Drawing.Size(160, 45);
             this.btnCadastrarItens.TabIndex = 3;
             this.btnCadastrarItens.Text = "Cadastrar Itens";
             this.btnCadastrarItens.UseVisualStyleBackColor = false;
@@ -90,22 +90,23 @@
             // btnAtualizarItens
             // 
             this.btnAtualizarItens.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.btnAtualizarItens.Font = new System.Drawing.Font("Yu Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnAtualizarItens.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.btnAtualizarItens.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnAtualizarItens.ForeColor = System.Drawing.Color.Purple;
             this.btnAtualizarItens.Location = new System.Drawing.Point(614, 23);
             this.btnAtualizarItens.Name = "btnAtualizarItens";
-            this.btnAtualizarItens.Size = new System.Drawing.Size(154, 67);
+            this.btnAtualizarItens.Size = new System.Drawing.Size(170, 45);
             this.btnAtualizarItens.TabIndex = 4;
             this.btnAtualizarItens.Text = "Atualizar Itens";
             this.btnAtualizarItens.UseVisualStyleBackColor = false;
             // 
             // listTarefas
             // 
+            this.listTarefas.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.listTarefas.FormattingEnabled = true;
             this.listTarefas.ItemHeight = 19;
-            this.listTarefas.Location = new System.Drawing.Point(21, 124);
+            this.listTarefas.Location = new System.Drawing.Point(21, 74);
             this.listTarefas.Name = "listTarefas";
-            this.listTarefas.Size = new System.Drawing.Size(747, 308);
+            this.listTarefas.Size = new System.Drawing.Size(763, 270);
             this.listTarefas.TabIndex = 5;
             // 
             // ListagemTarefas
@@ -113,7 +114,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(800, 352);
             this.Controls.Add(this.listTarefas);
             this.Controls.Add(this.btnAtualizarItens);
             this.Controls.Add(this.btnCadastrarItens);

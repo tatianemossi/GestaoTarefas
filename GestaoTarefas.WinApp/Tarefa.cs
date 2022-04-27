@@ -1,9 +1,12 @@
-﻿namespace GestaoTarefas.WinApp
+﻿using System;
+
+namespace GestaoTarefas.WinApp
 {
     public class Tarefa
     {
         public int Numero;
         public string Titulo;
+        public DateTime DataCriacao;
 
         public Tarefa()
         {
@@ -13,11 +16,12 @@
         {
             Numero = numero;
             Titulo = titulo;
+            DataCriacao = DateTime.Now;
         }
 
         public override string ToString()
         {
-            return $"Número: {Numero}, Título: {Titulo}";
+            return $"Número: {Numero} - Título: {Titulo} - Data de Criação: {DataCriacao}";
         }
     }
 }
