@@ -10,12 +10,6 @@ namespace GestaoTarefas.WinApp
 
         public Tarefa()
         {
-        }
-
-        public Tarefa(int numero, string titulo)
-        {
-            Numero = numero;
-            Titulo = titulo;
             DataCriacao = DateTime.Now;
         }
 

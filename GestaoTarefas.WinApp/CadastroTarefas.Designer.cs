@@ -39,7 +39,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.label1.ForeColor = System.Drawing.Color.MediumVioletRed;
             this.label1.Location = new System.Drawing.Point(22, 26);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(62, 19);
@@ -49,7 +49,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.label2.ForeColor = System.Drawing.Color.MediumVioletRed;
             this.label2.Location = new System.Drawing.Point(38, 76);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(46, 19);
@@ -58,6 +58,7 @@
             // 
             // txtNumero
             // 
+            this.txtNumero.BackColor = System.Drawing.Color.White;
             this.txtNumero.Enabled = false;
             this.txtNumero.Location = new System.Drawing.Point(115, 26);
             this.txtNumero.Name = "txtNumero";
@@ -66,6 +67,7 @@
             // 
             // txtTitulo
             // 
+            this.txtTitulo.BackColor = System.Drawing.Color.White;
             this.txtTitulo.Location = new System.Drawing.Point(115, 69);
             this.txtTitulo.Name = "txtTitulo";
             this.txtTitulo.Size = new System.Drawing.Size(347, 26);
@@ -73,10 +75,10 @@
             // 
             // btnGravar
             // 
-            this.btnGravar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.btnGravar.BackColor = System.Drawing.Color.White;
             this.btnGravar.DialogResult = System.Windows.Forms.DialogResult.OK;
             this.btnGravar.Font = new System.Drawing.Font("Yu Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnGravar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.btnGravar.ForeColor = System.Drawing.Color.MediumVioletRed;
             this.btnGravar.Location = new System.Drawing.Point(207, 142);
             this.btnGravar.Name = "btnGravar";
             this.btnGravar.Size = new System.Drawing.Size(124, 67);
@@ -87,10 +89,10 @@
             // 
             // btnCancelar
             // 
-            this.btnCancelar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.btnCancelar.BackColor = System.Drawing.Color.White;
             this.btnCancelar.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnCancelar.Font = new System.Drawing.Font("Yu Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnCancelar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.btnCancelar.ForeColor = System.Drawing.Color.MediumVioletRed;
             this.btnCancelar.Location = new System.Drawing.Point(338, 142);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(124, 67);
@@ -116,7 +118,7 @@
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "CadastroTarefa";
+            this.Text = "Cadastro de Tarefas";
             this.ResumeLayout(false);
             this.PerformLayout();
 

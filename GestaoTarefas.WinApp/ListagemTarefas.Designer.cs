@@ -38,9 +38,9 @@
             // 
             // btnInserir
             // 
-            this.btnInserir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.btnInserir.BackColor = System.Drawing.Color.MistyRose;
             this.btnInserir.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnInserir.ForeColor = System.Drawing.Color.Purple;
+            this.btnInserir.ForeColor = System.Drawing.Color.MediumVioletRed;
             this.btnInserir.Location = new System.Drawing.Point(21, 23);
             this.btnInserir.Name = "btnInserir";
             this.btnInserir.Size = new System.Drawing.Size(140, 45);
@@ -51,9 +51,9 @@
             // 
             // btnEditar
             // 
-            this.btnEditar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.btnEditar.BackColor = System.Drawing.Color.MistyRose;
             this.btnEditar.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnEditar.ForeColor = System.Drawing.Color.Purple;
+            this.btnEditar.ForeColor = System.Drawing.Color.MediumVioletRed;
             this.btnEditar.Location = new System.Drawing.Point(163, 23);
             this.btnEditar.Name = "btnEditar";
             this.btnEditar.Size = new System.Drawing.Size(140, 45);
@@ -64,9 +64,9 @@
             // 
             // btnExcluir
             // 
-            this.btnExcluir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.btnExcluir.BackColor = System.Drawing.Color.MistyRose;
             this.btnExcluir.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnExcluir.ForeColor = System.Drawing.Color.Purple;
+            this.btnExcluir.ForeColor = System.Drawing.Color.MediumVioletRed;
             this.btnExcluir.Location = new System.Drawing.Point(309, 23);
             this.btnExcluir.Name = "btnExcluir";
             this.btnExcluir.Size = new System.Drawing.Size(140, 45);
@@ -77,9 +77,9 @@
             // 
             // btnCadastrarItens
             // 
-            this.btnCadastrarItens.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.btnCadastrarItens.BackColor = System.Drawing.Color.MistyRose;
             this.btnCadastrarItens.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnCadastrarItens.ForeColor = System.Drawing.Color.Purple;
+            this.btnCadastrarItens.ForeColor = System.Drawing.Color.MediumVioletRed;
             this.btnCadastrarItens.Location = new System.Drawing.Point(452, 23);
             this.btnCadastrarItens.Name = "btnCadastrarItens";
             this.btnCadastrarItens.Size = new System.Drawing.Size(160, 45);
@@ -89,9 +89,9 @@
             // 
             // btnAtualizarItens
             // 
-            this.btnAtualizarItens.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.btnAtualizarItens.BackColor = System.Drawing.Color.MistyRose;
             this.btnAtualizarItens.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnAtualizarItens.ForeColor = System.Drawing.Color.Purple;
+            this.btnAtualizarItens.ForeColor = System.Drawing.Color.MediumVioletRed;
             this.btnAtualizarItens.Location = new System.Drawing.Point(614, 23);
             this.btnAtualizarItens.Name = "btnAtualizarItens";
             this.btnAtualizarItens.Size = new System.Drawing.Size(170, 45);
@@ -101,7 +101,8 @@
             // 
             // listTarefas
             // 
-            this.listTarefas.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.listTarefas.BackColor = System.Drawing.Color.MistyRose;
+            this.listTarefas.ForeColor = System.Drawing.Color.MediumVioletRed;
             this.listTarefas.FormattingEnabled = true;
             this.listTarefas.ItemHeight = 19;
             this.listTarefas.Location = new System.Drawing.Point(21, 74);
