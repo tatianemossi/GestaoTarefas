@@ -86,6 +86,7 @@
             this.btnCadastrarItens.TabIndex = 3;
             this.btnCadastrarItens.Text = "Cadastrar Itens";
             this.btnCadastrarItens.UseVisualStyleBackColor = false;
+            this.btnCadastrarItens.Click += new System.EventHandler(this.btnCadastrarItens_Click);
             // 
             // btnAtualizarItens
             // 
@@ -98,6 +99,7 @@
             this.btnAtualizarItens.TabIndex = 4;
             this.btnAtualizarItens.Text = "Atualizar Itens";
             this.btnAtualizarItens.UseVisualStyleBackColor = false;
+            this.btnAtualizarItens.Click += new System.EventHandler(this.btnAtualizarItens_Click);
             // 
             // listTarefas
             // 

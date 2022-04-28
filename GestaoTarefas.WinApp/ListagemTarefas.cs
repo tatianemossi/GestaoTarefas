@@ -39,7 +39,7 @@ namespace GestaoTarefas.WinApp
             {
                 repositorioTarefa.Inserir(tela.Tarefa);
                 CarregarTarefas();
-            }                
+            }
         }
 
         private void btnEditar_Click(object sender, EventArgs e)
@@ -48,10 +48,11 @@ namespace GestaoTarefas.WinApp
 
             if (tarefaSelecionada == null)
             {
-                MessageBox.Show("Favor selecionar uma tarefa", 
-                    "Edição de tarefas", 
-                    MessageBoxButtons.OK, 
+                MessageBox.Show("Favor selecionar uma tarefa",
+                    "Edição de tarefas",
+                    MessageBoxButtons.OK,
                     MessageBoxIcon.Exclamation);
+                return;
             }
             else
             {
@@ -66,7 +67,7 @@ namespace GestaoTarefas.WinApp
                     repositorioTarefa.Editar(tela.Tarefa);
                     CarregarTarefas();
                 }
-            }            
+            }
         }
 
         private void btnExcluir_Click(object sender, EventArgs e)
@@ -92,7 +93,59 @@ namespace GestaoTarefas.WinApp
                     repositorioTarefa.Excluir(tarefaSelecionada);
                     CarregarTarefas();
                 }
-            }                
+            }
+        }
+
+        private void btnCadastrarItens_Click(object sender, System.EventArgs e)
+        {
+            Tarefa tarefaSelecionada = (Tarefa)listTarefas.SelectedItem;
+
+            if (tarefaSelecionada == null)
+            {
+                MessageBox.Show("Favor selecionar uma tarefa",
+                    "Edição de tarefas",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Exclamation);
+                return;
+            }
+
+            CadastroItensTarefa tela = new CadastroItensTarefa(tarefaSelecionada);
+
+            if (tela.ShowDialog() == DialogResult.OK)
+            {
+                List<ItemTarefa> itens = tela.ItensAdicionados;
+
+                repositorioTarefa.AdicionarItens(tarefaSelecionada, itens);
+
+                CarregarTarefas();
+            } 
+        }
+
+        private void btnAtualizarItens_Click(object sender, EventArgs e)
+        {
+            Tarefa tarefaSelecionada = (Tarefa)listTarefas.SelectedItem;
+
+            if (tarefaSelecionada == null)
+            {
+                MessageBox.Show("Favor selecionar uma tarefa",
+                    "Edição de tarefas",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Exclamation);
+                return;
+            }
+
+            AtualizacaoItensTarefa tela = new AtualizacaoItensTarefa(tarefaSelecionada);
+
+            if (tela.ShowDialog() == DialogResult.OK)
+            {
+                List<ItemTarefa> itensConcluidos = tela.ItensConcluidos;
+
+                List<ItemTarefa> itensPendentes = tela.ItensPendentes;
+
+                repositorioTarefa.AtualizarItens(tarefaSelecionada, itensConcluidos, itensPendentes);
+            }
+
+            CarregarTarefas();
         }
     }
 }
