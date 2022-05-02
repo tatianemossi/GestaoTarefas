@@ -93,7 +93,7 @@
             this.Controls.Add(this.btnTarefas);
             this.Controls.Add(this.btnContatos);
             this.Name = "MenuPrincipal";
-            this.Text = "MenuPrincipal";
+            this.Text = "Menu Principal";
             this.ResumeLayout(false);
 
         }

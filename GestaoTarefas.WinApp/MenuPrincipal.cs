@@ -23,5 +23,12 @@ namespace GestaoTarefas.WinApp
             var controlTarefa = new UserControlTarefa();
             panelPrincipal.Controls.Add(controlTarefa);
         }
+
+        private void btnCompromissos_Click(object sender, EventArgs e)
+        {
+            panelPrincipal.Controls.Clear();
+            var controlCompromisso = new UserControlCompromisso();
+            panelPrincipal.Controls.Add(controlCompromisso);
+        }
     }
 }
