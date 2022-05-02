@@ -1,10 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text.Json.Serialization;
 
 namespace GestaoTarefas.WinApp
 {
-    public class Tarefa
+    public class Tarefa : EntidadeBase
     {
         private List<ItemTarefa> itens = new List<ItemTarefa>();
 
@@ -24,7 +25,10 @@ namespace GestaoTarefas.WinApp
         public string Titulo { get; set; }
         public DateTime DataCriacao { get; set; }
         public DateTime? DataConclusao { get; set; }
-        public List<ItemTarefa> Itens { get { return itens; } }
+        public PrioridadeEnum Prioridade { get; set; }
+
+        [JsonPropertyName("Itens")]
+        public List<ItemTarefa> Itens { get { return itens; } set { itens = value; } }
 
         public override string ToString()
         {
@@ -34,10 +38,11 @@ namespace GestaoTarefas.WinApp
             {
                 return $"Número: {Numero} - Título: {Titulo} - " +
                     $"Percentual: {percentual} - " +
+                    $"Prioridade: {Prioridade} - " +
                     $"Concluída: {DataConclusao.Value.ToShortDateString()}";
             }
 
-            return $"Número: {Numero} - Título: {Titulo} - Percentual: {percentual}%";
+            return $"Número: {Numero} - Título: {Titulo} - Prioridade: {Prioridade} - Percentual: {percentual}%";
         }
 
         public void AdicionarItem(ItemTarefa item)

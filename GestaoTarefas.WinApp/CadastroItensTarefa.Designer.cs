@@ -63,7 +63,6 @@
             this.btnGravar.TabIndex = 6;
             this.btnGravar.Text = "Gravar";
             this.btnGravar.UseVisualStyleBackColor = false;
-            this.btnGravar.Click += new System.EventHandler(this.btnGravar_Click);
             // 
             // txtTituloItem
             // 
@@ -157,12 +156,12 @@
         #endregion
 
         private System.Windows.Forms.Button btnCancelar;
-        private System.Windows.Forms.Button btnGravar;
         private System.Windows.Forms.TextBox txtTituloItem;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ListBox listItensTarefa;
         private System.Windows.Forms.Button btnAdicionar;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label labelTituloTarefa;
+        public System.Windows.Forms.Button btnGravar;
     }
 }

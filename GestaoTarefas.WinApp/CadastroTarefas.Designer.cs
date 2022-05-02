@@ -34,6 +34,8 @@
             this.txtTitulo = new System.Windows.Forms.TextBox();
             this.btnGravar = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
+            this.cBoxPrioridade = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // label1
@@ -76,10 +78,9 @@
             // btnGravar
             // 
             this.btnGravar.BackColor = System.Drawing.Color.White;
-            this.btnGravar.DialogResult = System.Windows.Forms.DialogResult.OK;
             this.btnGravar.Font = new System.Drawing.Font("Yu Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnGravar.ForeColor = System.Drawing.Color.MediumVioletRed;
-            this.btnGravar.Location = new System.Drawing.Point(207, 142);
+            this.btnGravar.Location = new System.Drawing.Point(208, 154);
             this.btnGravar.Name = "btnGravar";
             this.btnGravar.Size = new System.Drawing.Size(124, 67);
             this.btnGravar.TabIndex = 4;
@@ -93,18 +94,38 @@
             this.btnCancelar.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnCancelar.Font = new System.Drawing.Font("Yu Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnCancelar.ForeColor = System.Drawing.Color.MediumVioletRed;
-            this.btnCancelar.Location = new System.Drawing.Point(338, 142);
+            this.btnCancelar.Location = new System.Drawing.Point(338, 154);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(124, 67);
             this.btnCancelar.TabIndex = 5;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = false;
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.ForeColor = System.Drawing.Color.MediumVioletRed;
+            this.label3.Location = new System.Drawing.Point(10, 118);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(74, 19);
+            this.label3.TabIndex = 6;
+            this.label3.Text = "Prioridade:";
+            // 
+            // cBoxPrioridade
+            // 
+            this.cBoxPrioridade.FormattingEnabled = true;
+            this.cBoxPrioridade.Location = new System.Drawing.Point(115, 115);
+            this.cBoxPrioridade.Name = "cBoxPrioridade";
+            this.cBoxPrioridade.Size = new System.Drawing.Size(121, 27);
+            this.cBoxPrioridade.TabIndex = 7;
+            // 
             // CadastroTarefas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(522, 242);
+            this.Controls.Add(this.cBoxPrioridade);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnGravar);
             this.Controls.Add(this.txtTitulo);
@@ -132,5 +153,7 @@
         private System.Windows.Forms.TextBox txtTitulo;
         private System.Windows.Forms.Button btnGravar;
         private System.Windows.Forms.Button btnCancelar;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.ComboBox cBoxPrioridade;
     }
 }

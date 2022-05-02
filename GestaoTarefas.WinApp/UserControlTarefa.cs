@@ -4,11 +4,11 @@ using System.Windows.Forms;
 
 namespace GestaoTarefas.WinApp
 {
-    public partial class ListagemTarefas : Form
+    public partial class UserControlTarefa : UserControl
     {
         private RepositorioTarefa repositorioTarefa;
 
-        public ListagemTarefas()
+        public UserControlTarefa()
         {
             repositorioTarefa = new RepositorioTarefa();
             InitializeComponent();
@@ -118,7 +118,7 @@ namespace GestaoTarefas.WinApp
                 repositorioTarefa.AdicionarItens(tarefaSelecionada, itens);
 
                 CarregarTarefas();
-            } 
+            }
         }
 
         private void btnAtualizarItens_Click(object sender, EventArgs e)
