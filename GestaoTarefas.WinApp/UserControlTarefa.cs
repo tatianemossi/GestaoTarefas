@@ -27,7 +27,7 @@ namespace GestaoTarefas.WinApp
             }
         }
 
-        private void btnInserir_Click(object sender, EventArgs e)
+        private void btnInserirTarefa_Click(object sender, EventArgs e)
         {
             CadastroTarefas tela = new CadastroTarefas();
 
@@ -42,7 +42,7 @@ namespace GestaoTarefas.WinApp
             }
         }
 
-        private void btnEditar_Click(object sender, EventArgs e)
+        private void btnEditarTarefa_Click(object sender, EventArgs e)
         {
             Tarefa tarefaSelecionada = (Tarefa)listTarefas.SelectedItem;
 
@@ -70,7 +70,7 @@ namespace GestaoTarefas.WinApp
             }
         }
 
-        private void btnExcluir_Click(object sender, EventArgs e)
+        private void btnExcluirTarefa_Click(object sender, EventArgs e)
         {
             Tarefa tarefaSelecionada = (Tarefa)listTarefas.SelectedItem;
 

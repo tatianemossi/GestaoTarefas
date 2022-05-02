@@ -31,9 +31,9 @@
             this.listTarefas = new System.Windows.Forms.ListBox();
             this.btnAtualizarItens = new System.Windows.Forms.Button();
             this.btnCadastrarItens = new System.Windows.Forms.Button();
-            this.btnExcluir = new System.Windows.Forms.Button();
-            this.btnEditar = new System.Windows.Forms.Button();
-            this.btnInserir = new System.Windows.Forms.Button();
+            this.btnExcluirTarefa = new System.Windows.Forms.Button();
+            this.btnEditarTarefa = new System.Windows.Forms.Button();
+            this.btnInserirTarefa = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
@@ -74,44 +74,44 @@
             this.btnCadastrarItens.UseVisualStyleBackColor = false;
             this.btnCadastrarItens.Click += new System.EventHandler(this.btnCadastrarItens_Click);
             // 
-            // btnExcluir
+            // btnExcluirTarefa
             // 
-            this.btnExcluir.BackColor = System.Drawing.Color.Gainsboro;
-            this.btnExcluir.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnExcluir.ForeColor = System.Drawing.Color.MediumVioletRed;
-            this.btnExcluir.Location = new System.Drawing.Point(16, 236);
-            this.btnExcluir.Name = "btnExcluir";
-            this.btnExcluir.Size = new System.Drawing.Size(170, 46);
-            this.btnExcluir.TabIndex = 8;
-            this.btnExcluir.Text = "Excluir";
-            this.btnExcluir.UseVisualStyleBackColor = false;
-            this.btnExcluir.Click += new System.EventHandler(this.btnExcluir_Click);
+            this.btnExcluirTarefa.BackColor = System.Drawing.Color.Gainsboro;
+            this.btnExcluirTarefa.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnExcluirTarefa.ForeColor = System.Drawing.Color.MediumVioletRed;
+            this.btnExcluirTarefa.Location = new System.Drawing.Point(16, 236);
+            this.btnExcluirTarefa.Name = "btnExcluirTarefa";
+            this.btnExcluirTarefa.Size = new System.Drawing.Size(170, 46);
+            this.btnExcluirTarefa.TabIndex = 8;
+            this.btnExcluirTarefa.Text = "Excluir";
+            this.btnExcluirTarefa.UseVisualStyleBackColor = false;
+            this.btnExcluirTarefa.Click += new System.EventHandler(this.btnExcluirTarefa_Click);
             // 
-            // btnEditar
+            // btnEditarTarefa
             // 
-            this.btnEditar.BackColor = System.Drawing.Color.Gainsboro;
-            this.btnEditar.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnEditar.ForeColor = System.Drawing.Color.MediumVioletRed;
-            this.btnEditar.Location = new System.Drawing.Point(16, 175);
-            this.btnEditar.Name = "btnEditar";
-            this.btnEditar.Size = new System.Drawing.Size(170, 44);
-            this.btnEditar.TabIndex = 7;
-            this.btnEditar.Text = "Editar";
-            this.btnEditar.UseVisualStyleBackColor = false;
-            this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
+            this.btnEditarTarefa.BackColor = System.Drawing.Color.Gainsboro;
+            this.btnEditarTarefa.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnEditarTarefa.ForeColor = System.Drawing.Color.MediumVioletRed;
+            this.btnEditarTarefa.Location = new System.Drawing.Point(16, 175);
+            this.btnEditarTarefa.Name = "btnEditarTarefa";
+            this.btnEditarTarefa.Size = new System.Drawing.Size(170, 44);
+            this.btnEditarTarefa.TabIndex = 7;
+            this.btnEditarTarefa.Text = "Editar";
+            this.btnEditarTarefa.UseVisualStyleBackColor = false;
+            this.btnEditarTarefa.Click += new System.EventHandler(this.btnEditarTarefa_Click);
             // 
-            // btnInserir
+            // btnInserirTarefa
             // 
-            this.btnInserir.BackColor = System.Drawing.Color.Gainsboro;
-            this.btnInserir.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnInserir.ForeColor = System.Drawing.Color.MediumVioletRed;
-            this.btnInserir.Location = new System.Drawing.Point(16, 111);
-            this.btnInserir.Name = "btnInserir";
-            this.btnInserir.Size = new System.Drawing.Size(170, 46);
-            this.btnInserir.TabIndex = 6;
-            this.btnInserir.Text = "Inserir";
-            this.btnInserir.UseVisualStyleBackColor = false;
-            this.btnInserir.Click += new System.EventHandler(this.btnInserir_Click);
+            this.btnInserirTarefa.BackColor = System.Drawing.Color.Gainsboro;
+            this.btnInserirTarefa.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnInserirTarefa.ForeColor = System.Drawing.Color.MediumVioletRed;
+            this.btnInserirTarefa.Location = new System.Drawing.Point(16, 111);
+            this.btnInserirTarefa.Name = "btnInserirTarefa";
+            this.btnInserirTarefa.Size = new System.Drawing.Size(170, 46);
+            this.btnInserirTarefa.TabIndex = 6;
+            this.btnInserirTarefa.Text = "Inserir";
+            this.btnInserirTarefa.UseVisualStyleBackColor = false;
+            this.btnInserirTarefa.Click += new System.EventHandler(this.btnInserirTarefa_Click);
             // 
             // label1
             // 
@@ -133,9 +133,9 @@
             this.Controls.Add(this.listTarefas);
             this.Controls.Add(this.btnAtualizarItens);
             this.Controls.Add(this.btnCadastrarItens);
-            this.Controls.Add(this.btnExcluir);
-            this.Controls.Add(this.btnEditar);
-            this.Controls.Add(this.btnInserir);
+            this.Controls.Add(this.btnExcluirTarefa);
+            this.Controls.Add(this.btnEditarTarefa);
+            this.Controls.Add(this.btnInserirTarefa);
             this.Name = "UserControlTarefa";
             this.Size = new System.Drawing.Size(1106, 487);
             this.ResumeLayout(false);
@@ -148,9 +148,9 @@
         private System.Windows.Forms.ListBox listTarefas;
         private System.Windows.Forms.Button btnAtualizarItens;
         private System.Windows.Forms.Button btnCadastrarItens;
-        private System.Windows.Forms.Button btnExcluir;
-        private System.Windows.Forms.Button btnEditar;
-        private System.Windows.Forms.Button btnInserir;
+        private System.Windows.Forms.Button btnExcluirTarefa;
+        private System.Windows.Forms.Button btnEditarTarefa;
+        private System.Windows.Forms.Button btnInserirTarefa;
         private System.Windows.Forms.Label label1;
     }
 }
