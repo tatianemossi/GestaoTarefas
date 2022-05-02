@@ -147,5 +147,29 @@ namespace GestaoTarefas.WinApp
 
             CarregarTarefas();
         }
+
+        public void btnVisualizarPendentes_Click(object sender, EventArgs e)
+        {
+            List<Tarefa> tarefas = repositorioTarefa.SelecionarPendentes();
+
+            listTarefas.Items.Clear();
+
+            foreach (Tarefa tarefa in tarefas)
+            {
+                listTarefas.Items.Add(tarefa);
+            }
+        }
+
+        public void btnVisualizarConcluidas_Click(object sender, EventArgs e)
+        {
+            List<Tarefa> tarefas = repositorioTarefa.SelecionarConcluidas();
+
+            listTarefas.Items.Clear();
+
+            foreach (Tarefa tarefa in tarefas)
+            {
+                listTarefas.Items.Add(tarefa);
+            }
+        }
     }
 }

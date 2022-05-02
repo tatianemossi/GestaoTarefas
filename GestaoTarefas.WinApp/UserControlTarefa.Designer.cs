@@ -35,6 +35,8 @@
             this.btnEditarTarefa = new System.Windows.Forms.Button();
             this.btnInserirTarefa = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.btnVisualizarPendentes = new System.Windows.Forms.Button();
+            this.btnVisualizarConcluidas = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // listTarefas
@@ -53,7 +55,7 @@
             this.btnAtualizarItens.BackColor = System.Drawing.Color.Gainsboro;
             this.btnAtualizarItens.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnAtualizarItens.ForeColor = System.Drawing.Color.MediumVioletRed;
-            this.btnAtualizarItens.Location = new System.Drawing.Point(16, 362);
+            this.btnAtualizarItens.Location = new System.Drawing.Point(16, 274);
             this.btnAtualizarItens.Name = "btnAtualizarItens";
             this.btnAtualizarItens.Size = new System.Drawing.Size(170, 45);
             this.btnAtualizarItens.TabIndex = 10;
@@ -66,7 +68,7 @@
             this.btnCadastrarItens.BackColor = System.Drawing.Color.Gainsboro;
             this.btnCadastrarItens.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnCadastrarItens.ForeColor = System.Drawing.Color.MediumVioletRed;
-            this.btnCadastrarItens.Location = new System.Drawing.Point(16, 300);
+            this.btnCadastrarItens.Location = new System.Drawing.Point(16, 223);
             this.btnCadastrarItens.Name = "btnCadastrarItens";
             this.btnCadastrarItens.Size = new System.Drawing.Size(170, 45);
             this.btnCadastrarItens.TabIndex = 9;
@@ -79,7 +81,7 @@
             this.btnExcluirTarefa.BackColor = System.Drawing.Color.Gainsboro;
             this.btnExcluirTarefa.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnExcluirTarefa.ForeColor = System.Drawing.Color.MediumVioletRed;
-            this.btnExcluirTarefa.Location = new System.Drawing.Point(16, 236);
+            this.btnExcluirTarefa.Location = new System.Drawing.Point(16, 171);
             this.btnExcluirTarefa.Name = "btnExcluirTarefa";
             this.btnExcluirTarefa.Size = new System.Drawing.Size(170, 46);
             this.btnExcluirTarefa.TabIndex = 8;
@@ -92,7 +94,7 @@
             this.btnEditarTarefa.BackColor = System.Drawing.Color.Gainsboro;
             this.btnEditarTarefa.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnEditarTarefa.ForeColor = System.Drawing.Color.MediumVioletRed;
-            this.btnEditarTarefa.Location = new System.Drawing.Point(16, 175);
+            this.btnEditarTarefa.Location = new System.Drawing.Point(16, 121);
             this.btnEditarTarefa.Name = "btnEditarTarefa";
             this.btnEditarTarefa.Size = new System.Drawing.Size(170, 44);
             this.btnEditarTarefa.TabIndex = 7;
@@ -105,7 +107,7 @@
             this.btnInserirTarefa.BackColor = System.Drawing.Color.Gainsboro;
             this.btnInserirTarefa.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnInserirTarefa.ForeColor = System.Drawing.Color.MediumVioletRed;
-            this.btnInserirTarefa.Location = new System.Drawing.Point(16, 111);
+            this.btnInserirTarefa.Location = new System.Drawing.Point(16, 69);
             this.btnInserirTarefa.Name = "btnInserirTarefa";
             this.btnInserirTarefa.Size = new System.Drawing.Size(170, 46);
             this.btnInserirTarefa.TabIndex = 6;
@@ -125,10 +127,38 @@
             this.label1.TabIndex = 12;
             this.label1.Text = "Tarefas";
             // 
+            // btnVisualizarPendentes
+            // 
+            this.btnVisualizarPendentes.BackColor = System.Drawing.Color.Gainsboro;
+            this.btnVisualizarPendentes.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnVisualizarPendentes.ForeColor = System.Drawing.Color.MediumVioletRed;
+            this.btnVisualizarPendentes.Location = new System.Drawing.Point(16, 325);
+            this.btnVisualizarPendentes.Name = "btnVisualizarPendentes";
+            this.btnVisualizarPendentes.Size = new System.Drawing.Size(170, 45);
+            this.btnVisualizarPendentes.TabIndex = 13;
+            this.btnVisualizarPendentes.Text = "Visualizar Pendentes";
+            this.btnVisualizarPendentes.UseVisualStyleBackColor = false;
+            this.btnVisualizarPendentes.Click += new System.EventHandler(this.btnVisualizarPendentes_Click);
+            // 
+            // btnVisualizarConcluidas
+            // 
+            this.btnVisualizarConcluidas.BackColor = System.Drawing.Color.Gainsboro;
+            this.btnVisualizarConcluidas.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnVisualizarConcluidas.ForeColor = System.Drawing.Color.MediumVioletRed;
+            this.btnVisualizarConcluidas.Location = new System.Drawing.Point(16, 376);
+            this.btnVisualizarConcluidas.Name = "btnVisualizarConcluidas";
+            this.btnVisualizarConcluidas.Size = new System.Drawing.Size(170, 45);
+            this.btnVisualizarConcluidas.TabIndex = 14;
+            this.btnVisualizarConcluidas.Text = "Visualizar Concluídas";
+            this.btnVisualizarConcluidas.UseVisualStyleBackColor = false;
+            this.btnVisualizarConcluidas.Click += new System.EventHandler(this.btnVisualizarConcluidas_Click);
+            // 
             // UserControlTarefa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.btnVisualizarConcluidas);
+            this.Controls.Add(this.btnVisualizarPendentes);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.listTarefas);
             this.Controls.Add(this.btnAtualizarItens);
@@ -152,5 +182,7 @@
         private System.Windows.Forms.Button btnEditarTarefa;
         private System.Windows.Forms.Button btnInserirTarefa;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnVisualizarPendentes;
+        private System.Windows.Forms.Button btnVisualizarConcluidas;
     }
 }

@@ -35,5 +35,19 @@ namespace GestaoTarefas.WinApp
         {
             return registros.Any(x => x.Titulo.ToLower() == text.ToLower());
         }
+
+        public List<Tarefa> SelecionarPendentes()
+        {
+            return registros.Where(x => x.DataConclusao == null)
+                .OrderBy(x => x.Prioridade)
+                .ToList();
+        }
+        
+        public List<Tarefa> SelecionarConcluidas()
+        {
+            return registros.Where(x => x.DataConclusao != null)
+                .OrderBy(x => x.Prioridade)
+                .ToList();
+        }
     }
 }
