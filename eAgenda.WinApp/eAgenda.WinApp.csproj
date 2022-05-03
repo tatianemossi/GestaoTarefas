@@ -12,6 +12,12 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\eAgenda.Dominio\eAgenda.Dominio.csproj" />
+    <ProjectReference Include="..\eAgenda.Repositorio\eAgenda.Repositorio.csproj" />
+    <ProjectReference Include="..\eAgenda.Utilitario\eAgenda.Utilitario.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Compile Update="Properties\Resources.Designer.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
