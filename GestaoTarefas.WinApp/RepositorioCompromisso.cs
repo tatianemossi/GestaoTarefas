@@ -31,7 +31,8 @@ namespace GestaoTarefas.WinApp
 
         public List<Compromisso> SelecionarFuturosIntervaloData(DateTime dataInicio, DateTime dataFinal)
         {
-            return registros.Where(x => x.HoraFinal >= dataInicio && x.HoraFinal <= dataFinal).ToList();
+            var registrosFiltrados = registros.Where(x => x.HoraFinal >= dataInicio).ToList();
+            return registrosFiltrados.Where(x => x.HoraInicio <= dataFinal).ToList();
         }
     }
 }

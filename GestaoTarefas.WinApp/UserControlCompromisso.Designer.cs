@@ -83,6 +83,7 @@
             this.listCompromissos.Name = "listCompromissos";
             this.listCompromissos.Size = new System.Drawing.Size(1237, 327);
             this.listCompromissos.TabIndex = 32;
+            this.listCompromissos.DoubleClick += new System.EventHandler(this.btnEditarCompromisso_Click);
             // 
             // btnExcluirCompromisso
             // 
@@ -127,7 +128,7 @@
             // 
             this.tvwContatosOrdenados.Location = new System.Drawing.Point(220, 83);
             this.tvwContatosOrdenados.Name = "tvwContatosOrdenados";
-            this.tvwContatosOrdenados.Size = new System.Drawing.Size(834, 327);
+            this.tvwContatosOrdenados.Size = new System.Drawing.Size(1237, 327);
             this.tvwContatosOrdenados.TabIndex = 35;
             this.tvwContatosOrdenados.Visible = false;
             // 
@@ -174,7 +175,7 @@
             // 
             // dtFiltroDataFinal
             // 
-            this.dtFiltroDataFinal.CustomFormat = "dd/MM/yyyy hh:mm:ss";
+            this.dtFiltroDataFinal.CustomFormat = "dd/MM/yyyy HH:mm:ss";
             this.dtFiltroDataFinal.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dtFiltroDataFinal.Location = new System.Drawing.Point(391, 30);
             this.dtFiltroDataFinal.Name = "dtFiltroDataFinal";
@@ -193,7 +194,7 @@
             // 
             // dtFiltroDataInicio
             // 
-            this.dtFiltroDataInicio.CustomFormat = "dd/MM/yyyy hh:mm:ss";
+            this.dtFiltroDataInicio.CustomFormat = "dd/MM/yyyy HH:mm:ss";
             this.dtFiltroDataInicio.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dtFiltroDataInicio.Location = new System.Drawing.Point(98, 31);
             this.dtFiltroDataInicio.Name = "dtFiltroDataInicio";
@@ -218,10 +219,10 @@
             this.Controls.Add(this.btnVisualizarFuturos);
             this.Controls.Add(this.btnVisualizarPassados);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.listCompromissos);
             this.Controls.Add(this.btnExcluirCompromisso);
             this.Controls.Add(this.btnEditarCompromisso);
             this.Controls.Add(this.btnInserirCompromisso);
+            this.Controls.Add(this.listCompromissos);
             this.Controls.Add(this.tvwContatosOrdenados);
             this.Name = "UserControlCompromisso";
             this.Size = new System.Drawing.Size(1493, 670);

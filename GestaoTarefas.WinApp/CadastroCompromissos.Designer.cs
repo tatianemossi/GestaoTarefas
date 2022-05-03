@@ -50,7 +50,7 @@
             this.cboxContato.FormattingEnabled = true;
             this.cboxContato.Location = new System.Drawing.Point(167, 185);
             this.cboxContato.Name = "cboxContato";
-            this.cboxContato.Size = new System.Drawing.Size(164, 27);
+            this.cboxContato.Size = new System.Drawing.Size(347, 27);
             this.cboxContato.TabIndex = 5;
             // 
             // label5
@@ -168,6 +168,7 @@
             // 
             // dtHoraInicial
             // 
+            this.dtHoraInicial.CustomFormat = "";
             this.dtHoraInicial.Format = System.Windows.Forms.DateTimePickerFormat.Time;
             this.dtHoraInicial.Location = new System.Drawing.Point(167, 121);
             this.dtHoraInicial.MinDate = new System.DateTime(2019, 1, 1, 0, 0, 0, 0);
@@ -178,6 +179,7 @@
             // 
             // dtHoraFinal
             // 
+            this.dtHoraFinal.CustomFormat = "";
             this.dtHoraFinal.Format = System.Windows.Forms.DateTimePickerFormat.Time;
             this.dtHoraFinal.Location = new System.Drawing.Point(167, 153);
             this.dtHoraFinal.MinDate = new System.DateTime(2019, 1, 1, 0, 0, 0, 0);
