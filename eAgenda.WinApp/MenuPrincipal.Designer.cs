@@ -42,7 +42,7 @@
             this.btnContatos.Location = new System.Drawing.Point(12, 12);
             this.btnContatos.Name = "btnContatos";
             this.btnContatos.Size = new System.Drawing.Size(140, 45);
-            this.btnContatos.TabIndex = 1;
+            this.btnContatos.TabIndex = 0;
             this.btnContatos.Text = "Contatos";
             this.btnContatos.UseVisualStyleBackColor = false;
             this.btnContatos.Click += new System.EventHandler(this.btnContatos_Click);
@@ -55,7 +55,7 @@
             this.btnTarefas.Location = new System.Drawing.Point(179, 12);
             this.btnTarefas.Name = "btnTarefas";
             this.btnTarefas.Size = new System.Drawing.Size(140, 45);
-            this.btnTarefas.TabIndex = 2;
+            this.btnTarefas.TabIndex = 1;
             this.btnTarefas.Text = "Tarefas";
             this.btnTarefas.UseVisualStyleBackColor = false;
             this.btnTarefas.Click += new System.EventHandler(this.btnTarefas_Click);
@@ -79,7 +79,7 @@
             this.btnCompromissos.Location = new System.Drawing.Point(350, 12);
             this.btnCompromissos.Name = "btnCompromissos";
             this.btnCompromissos.Size = new System.Drawing.Size(140, 45);
-            this.btnCompromissos.TabIndex = 4;
+            this.btnCompromissos.TabIndex = 2;
             this.btnCompromissos.Text = "Compromissos";
             this.btnCompromissos.UseVisualStyleBackColor = false;
             this.btnCompromissos.Click += new System.EventHandler(this.btnCompromissos_Click);

@@ -70,12 +70,18 @@ namespace eAgenda.WinApp
                 CadastroContatos tela = new CadastroContatos();
 
                 tela.Contato = contatoSelecionado;
+                var nomeAntigo = contatoSelecionado.Nome;
 
                 var resultado = tela.ShowDialog();
 
                 if (resultado == DialogResult.OK)
                 {
+                    //Buscar Contato salvo()
+                    //BuscarContatoSalvo();
+
                     repositorioContato.Editar(tela.Contato);
+                    repositorioCompromisso.AtualizarCompromisso(nomeAntigo, contatoSelecionado.Nome);
+                    repositorioCompromisso.SalvarDados();
                     CarregarContatos();
                 }
             }

@@ -71,7 +71,7 @@
             this.listContatos.Location = new System.Drawing.Point(218, 81);
             this.listContatos.Name = "listContatos";
             this.listContatos.Size = new System.Drawing.Size(834, 327);
-            this.listContatos.TabIndex = 25;
+            this.listContatos.TabIndex = 4;
             this.listContatos.DoubleClick += new System.EventHandler(this.btnEditarContato_Click);
             // 
             // btnExcluirContato
@@ -82,7 +82,7 @@
             this.btnExcluirContato.Location = new System.Drawing.Point(14, 237);
             this.btnExcluirContato.Name = "btnExcluirContato";
             this.btnExcluirContato.Size = new System.Drawing.Size(170, 46);
-            this.btnExcluirContato.TabIndex = 22;
+            this.btnExcluirContato.TabIndex = 2;
             this.btnExcluirContato.Text = "Excluir";
             this.btnExcluirContato.UseVisualStyleBackColor = false;
             this.btnExcluirContato.Click += new System.EventHandler(this.btnExcluirContato_Click);
@@ -95,7 +95,7 @@
             this.btnEditarContato.Location = new System.Drawing.Point(14, 176);
             this.btnEditarContato.Name = "btnEditarContato";
             this.btnEditarContato.Size = new System.Drawing.Size(170, 44);
-            this.btnEditarContato.TabIndex = 21;
+            this.btnEditarContato.TabIndex = 1;
             this.btnEditarContato.Text = "Editar";
             this.btnEditarContato.UseVisualStyleBackColor = false;
             this.btnEditarContato.Click += new System.EventHandler(this.btnEditarContato_Click);
@@ -108,7 +108,7 @@
             this.btnInserirContato.Location = new System.Drawing.Point(14, 112);
             this.btnInserirContato.Name = "btnInserirContato";
             this.btnInserirContato.Size = new System.Drawing.Size(170, 46);
-            this.btnInserirContato.TabIndex = 20;
+            this.btnInserirContato.TabIndex = 0;
             this.btnInserirContato.Text = "Inserir";
             this.btnInserirContato.UseVisualStyleBackColor = false;
             this.btnInserirContato.Click += new System.EventHandler(this.btnInserirContato_Click);
@@ -121,7 +121,7 @@
             this.btnVisualizar.Location = new System.Drawing.Point(14, 302);
             this.btnVisualizar.Name = "btnVisualizar";
             this.btnVisualizar.Size = new System.Drawing.Size(170, 46);
-            this.btnVisualizar.TabIndex = 27;
+            this.btnVisualizar.TabIndex = 3;
             this.btnVisualizar.Text = "Visualizar";
             this.btnVisualizar.UseVisualStyleBackColor = false;
             this.btnVisualizar.Click += new System.EventHandler(this.btnVisualizar_Click);

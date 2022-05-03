@@ -65,7 +65,7 @@
             this.txtNumero.Location = new System.Drawing.Point(115, 26);
             this.txtNumero.Name = "txtNumero";
             this.txtNumero.Size = new System.Drawing.Size(119, 26);
-            this.txtNumero.TabIndex = 2;
+            this.txtNumero.TabIndex = 0;
             // 
             // txtTitulo
             // 
@@ -73,7 +73,7 @@
             this.txtTitulo.Location = new System.Drawing.Point(115, 69);
             this.txtTitulo.Name = "txtTitulo";
             this.txtTitulo.Size = new System.Drawing.Size(347, 26);
-            this.txtTitulo.TabIndex = 3;
+            this.txtTitulo.TabIndex = 1;
             // 
             // btnGravar
             // 
@@ -83,7 +83,7 @@
             this.btnGravar.Location = new System.Drawing.Point(208, 154);
             this.btnGravar.Name = "btnGravar";
             this.btnGravar.Size = new System.Drawing.Size(124, 67);
-            this.btnGravar.TabIndex = 4;
+            this.btnGravar.TabIndex = 3;
             this.btnGravar.Text = "Gravar";
             this.btnGravar.UseVisualStyleBackColor = false;
             this.btnGravar.Click += new System.EventHandler(this.btnGravar_Click);
@@ -97,7 +97,7 @@
             this.btnCancelar.Location = new System.Drawing.Point(338, 154);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(124, 67);
-            this.btnCancelar.TabIndex = 5;
+            this.btnCancelar.TabIndex = 4;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = false;
             // 
@@ -117,7 +117,7 @@
             this.cBoxPrioridade.Location = new System.Drawing.Point(115, 115);
             this.cBoxPrioridade.Name = "cBoxPrioridade";
             this.cBoxPrioridade.Size = new System.Drawing.Size(121, 27);
-            this.cBoxPrioridade.TabIndex = 7;
+            this.cBoxPrioridade.TabIndex = 2;
             // 
             // CadastroTarefas
             // 

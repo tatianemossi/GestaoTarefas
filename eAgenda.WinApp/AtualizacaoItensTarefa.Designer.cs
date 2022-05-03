@@ -74,7 +74,7 @@
             this.btnCancelar.Location = new System.Drawing.Point(352, 268);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(100, 44);
-            this.btnCancelar.TabIndex = 17;
+            this.btnCancelar.TabIndex = 2;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = false;
             // 
@@ -87,7 +87,7 @@
             this.btnGravar.Location = new System.Drawing.Point(247, 268);
             this.btnGravar.Name = "btnGravar";
             this.btnGravar.Size = new System.Drawing.Size(99, 44);
-            this.btnGravar.TabIndex = 16;
+            this.btnGravar.TabIndex = 1;
             this.btnGravar.Text = "Gravar";
             this.btnGravar.UseVisualStyleBackColor = false;
             // 

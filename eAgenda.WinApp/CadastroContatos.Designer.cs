@@ -61,7 +61,7 @@
             this.btnCancelar.Location = new System.Drawing.Point(358, 248);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(124, 67);
-            this.btnCancelar.TabIndex = 13;
+            this.btnCancelar.TabIndex = 6;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = false;
             // 
@@ -73,7 +73,7 @@
             this.btnGravar.Location = new System.Drawing.Point(228, 248);
             this.btnGravar.Name = "btnGravar";
             this.btnGravar.Size = new System.Drawing.Size(124, 67);
-            this.btnGravar.TabIndex = 12;
+            this.btnGravar.TabIndex = 5;
             this.btnGravar.Text = "Gravar";
             this.btnGravar.UseVisualStyleBackColor = false;
             this.btnGravar.Click += new System.EventHandler(this.btnGravar_Click);
@@ -84,7 +84,7 @@
             this.txtEmail.Location = new System.Drawing.Point(116, 63);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(347, 26);
-            this.txtEmail.TabIndex = 11;
+            this.txtEmail.TabIndex = 1;
             // 
             // txtNome
             // 
@@ -92,7 +92,7 @@
             this.txtNome.Location = new System.Drawing.Point(116, 31);
             this.txtNome.Name = "txtNome";
             this.txtNome.Size = new System.Drawing.Size(347, 26);
-            this.txtNome.TabIndex = 10;
+            this.txtNome.TabIndex = 0;
             // 
             // label2
             // 
@@ -120,7 +120,7 @@
             this.txtTelefone.Location = new System.Drawing.Point(116, 98);
             this.txtTelefone.Name = "txtTelefone";
             this.txtTelefone.Size = new System.Drawing.Size(164, 26);
-            this.txtTelefone.TabIndex = 15;
+            this.txtTelefone.TabIndex = 2;
             // 
             // label4
             // 
@@ -148,7 +148,7 @@
             this.txtEmpresa.Location = new System.Drawing.Point(116, 133);
             this.txtEmpresa.Name = "txtEmpresa";
             this.txtEmpresa.Size = new System.Drawing.Size(164, 26);
-            this.txtEmpresa.TabIndex = 18;
+            this.txtEmpresa.TabIndex = 3;
             // 
             // txtCargo
             // 
@@ -156,7 +156,7 @@
             this.txtCargo.Location = new System.Drawing.Point(116, 167);
             this.txtCargo.Name = "txtCargo";
             this.txtCargo.Size = new System.Drawing.Size(164, 26);
-            this.txtCargo.TabIndex = 19;
+            this.txtCargo.TabIndex = 4;
             // 
             // CadastroContatos
             // 

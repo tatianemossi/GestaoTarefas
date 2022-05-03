@@ -35,5 +35,19 @@ namespace eAgenda.Repositorio
             var registrosFiltrados = registros.Where(x => x.HoraFinal >= dataInicio).ToList();
             return registrosFiltrados.Where(x => x.HoraInicio <= dataFinal).ToList();
         }
+
+        public void AtualizarCompromisso(string nomeAntigo, string nomeNovo)
+        {
+            foreach (var compromisso in registros)
+            {
+                if (compromisso != null)
+                {
+                    if (compromisso.Contato.Nome == nomeAntigo)
+                    {
+                        compromisso.Contato.Nome = nomeNovo;
+                    }
+                }
+            }
+        }
     }
 }

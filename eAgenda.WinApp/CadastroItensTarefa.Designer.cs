@@ -47,7 +47,7 @@
             this.btnCancelar.Location = new System.Drawing.Point(297, 265);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(100, 44);
-            this.btnCancelar.TabIndex = 7;
+            this.btnCancelar.TabIndex = 4;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = false;
             // 
@@ -60,7 +60,7 @@
             this.btnGravar.Location = new System.Drawing.Point(192, 265);
             this.btnGravar.Name = "btnGravar";
             this.btnGravar.Size = new System.Drawing.Size(99, 44);
-            this.btnGravar.TabIndex = 6;
+            this.btnGravar.TabIndex = 3;
             this.btnGravar.Text = "Gravar";
             this.btnGravar.UseVisualStyleBackColor = false;
             // 
@@ -69,7 +69,7 @@
             this.txtTituloItem.Location = new System.Drawing.Point(80, 71);
             this.txtTituloItem.Name = "txtTituloItem";
             this.txtTituloItem.Size = new System.Drawing.Size(181, 26);
-            this.txtTituloItem.TabIndex = 8;
+            this.txtTituloItem.TabIndex = 0;
             // 
             // label1
             // 
@@ -89,7 +89,7 @@
             this.listItensTarefa.Location = new System.Drawing.Point(26, 103);
             this.listItensTarefa.Name = "listItensTarefa";
             this.listItensTarefa.Size = new System.Drawing.Size(361, 156);
-            this.listItensTarefa.TabIndex = 10;
+            this.listItensTarefa.TabIndex = 2;
             // 
             // btnAdicionar
             // 
@@ -100,7 +100,7 @@
             this.btnAdicionar.Location = new System.Drawing.Point(273, 69);
             this.btnAdicionar.Name = "btnAdicionar";
             this.btnAdicionar.Size = new System.Drawing.Size(114, 28);
-            this.btnAdicionar.TabIndex = 11;
+            this.btnAdicionar.TabIndex = 1;
             this.btnAdicionar.Text = "Adicionar";
             this.btnAdicionar.UseVisualStyleBackColor = false;
             this.btnAdicionar.Click += new System.EventHandler(this.btnAdicionar_Click);

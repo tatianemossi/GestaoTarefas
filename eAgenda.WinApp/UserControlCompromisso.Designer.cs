@@ -53,7 +53,7 @@
             this.btnVisualizarPassados.Location = new System.Drawing.Point(16, 304);
             this.btnVisualizarPassados.Name = "btnVisualizarPassados";
             this.btnVisualizarPassados.Size = new System.Drawing.Size(170, 46);
-            this.btnVisualizarPassados.TabIndex = 34;
+            this.btnVisualizarPassados.TabIndex = 3;
             this.btnVisualizarPassados.Text = "Visualizar Passados";
             this.btnVisualizarPassados.UseVisualStyleBackColor = false;
             this.btnVisualizarPassados.Click += new System.EventHandler(this.btnVisualizarCompromissos_Click);
@@ -82,7 +82,7 @@
             this.listCompromissos.Location = new System.Drawing.Point(220, 83);
             this.listCompromissos.Name = "listCompromissos";
             this.listCompromissos.Size = new System.Drawing.Size(1237, 327);
-            this.listCompromissos.TabIndex = 32;
+            this.listCompromissos.TabIndex = 8;
             this.listCompromissos.DoubleClick += new System.EventHandler(this.btnEditarCompromisso_Click);
             // 
             // btnExcluirCompromisso
@@ -93,7 +93,7 @@
             this.btnExcluirCompromisso.Location = new System.Drawing.Point(16, 239);
             this.btnExcluirCompromisso.Name = "btnExcluirCompromisso";
             this.btnExcluirCompromisso.Size = new System.Drawing.Size(170, 46);
-            this.btnExcluirCompromisso.TabIndex = 31;
+            this.btnExcluirCompromisso.TabIndex = 2;
             this.btnExcluirCompromisso.Text = "Excluir";
             this.btnExcluirCompromisso.UseVisualStyleBackColor = false;
             this.btnExcluirCompromisso.Click += new System.EventHandler(this.btnExcluirCompromisso_Click);
@@ -106,7 +106,7 @@
             this.btnEditarCompromisso.Location = new System.Drawing.Point(16, 178);
             this.btnEditarCompromisso.Name = "btnEditarCompromisso";
             this.btnEditarCompromisso.Size = new System.Drawing.Size(170, 44);
-            this.btnEditarCompromisso.TabIndex = 30;
+            this.btnEditarCompromisso.TabIndex = 1;
             this.btnEditarCompromisso.Text = "Editar";
             this.btnEditarCompromisso.UseVisualStyleBackColor = false;
             this.btnEditarCompromisso.Click += new System.EventHandler(this.btnEditarCompromisso_Click);
@@ -119,7 +119,7 @@
             this.btnInserirCompromisso.Location = new System.Drawing.Point(16, 114);
             this.btnInserirCompromisso.Name = "btnInserirCompromisso";
             this.btnInserirCompromisso.Size = new System.Drawing.Size(170, 46);
-            this.btnInserirCompromisso.TabIndex = 29;
+            this.btnInserirCompromisso.TabIndex = 0;
             this.btnInserirCompromisso.Text = "Inserir";
             this.btnInserirCompromisso.UseVisualStyleBackColor = false;
             this.btnInserirCompromisso.Click += new System.EventHandler(this.btnInserirCompromisso_Click);
@@ -140,7 +140,7 @@
             this.btnVisualizarFuturos.Location = new System.Drawing.Point(16, 364);
             this.btnVisualizarFuturos.Name = "btnVisualizarFuturos";
             this.btnVisualizarFuturos.Size = new System.Drawing.Size(170, 46);
-            this.btnVisualizarFuturos.TabIndex = 36;
+            this.btnVisualizarFuturos.TabIndex = 4;
             this.btnVisualizarFuturos.Text = "Visualizar Futuros";
             this.btnVisualizarFuturos.UseVisualStyleBackColor = false;
             this.btnVisualizarFuturos.Click += new System.EventHandler(this.btnVisualizarFuturos_Click);
@@ -156,7 +156,7 @@
             this.gbFiltros.Location = new System.Drawing.Point(218, 3);
             this.gbFiltros.Name = "gbFiltros";
             this.gbFiltros.Size = new System.Drawing.Size(1239, 67);
-            this.gbFiltros.TabIndex = 37;
+            this.gbFiltros.TabIndex = 12;
             this.gbFiltros.TabStop = false;
             this.gbFiltros.Text = "Filtros";
             this.gbFiltros.Visible = false;
@@ -169,7 +169,7 @@
             this.btnFiltrar.Location = new System.Drawing.Point(624, 20);
             this.btnFiltrar.Name = "btnFiltrar";
             this.btnFiltrar.Size = new System.Drawing.Size(127, 41);
-            this.btnFiltrar.TabIndex = 38;
+            this.btnFiltrar.TabIndex = 7;
             this.btnFiltrar.Text = "Filtrar";
             this.btnFiltrar.UseVisualStyleBackColor = false;
             this.btnFiltrar.Click += new System.EventHandler(this.btnFiltrar_Click);
@@ -181,7 +181,7 @@
             this.dtFiltroDataFinal.Location = new System.Drawing.Point(391, 30);
             this.dtFiltroDataFinal.Name = "dtFiltroDataFinal";
             this.dtFiltroDataFinal.Size = new System.Drawing.Size(227, 26);
-            this.dtFiltroDataFinal.TabIndex = 3;
+            this.dtFiltroDataFinal.TabIndex = 6;
             this.dtFiltroDataFinal.Value = new System.DateTime(2022, 5, 3, 11, 35, 28, 0);
             // 
             // label3
@@ -200,7 +200,7 @@
             this.dtFiltroDataInicio.Location = new System.Drawing.Point(98, 31);
             this.dtFiltroDataInicio.Name = "dtFiltroDataInicio";
             this.dtFiltroDataInicio.Size = new System.Drawing.Size(204, 26);
-            this.dtFiltroDataInicio.TabIndex = 1;
+            this.dtFiltroDataInicio.TabIndex = 5;
             this.dtFiltroDataInicio.Value = new System.DateTime(2022, 5, 3, 11, 35, 28, 0);
             // 
             // label1
