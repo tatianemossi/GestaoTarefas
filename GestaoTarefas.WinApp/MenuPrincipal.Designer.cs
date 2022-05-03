@@ -82,6 +82,7 @@
             this.btnCompromissos.TabIndex = 4;
             this.btnCompromissos.Text = "Compromissos";
             this.btnCompromissos.UseVisualStyleBackColor = false;
+            this.btnCompromissos.Click += new System.EventHandler(this.btnCompromissos_Click);
             // 
             // MenuPrincipal
             // 
@@ -93,6 +94,7 @@
             this.Controls.Add(this.btnTarefas);
             this.Controls.Add(this.btnContatos);
             this.Name = "MenuPrincipal";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Menu Principal";
             this.ResumeLayout(false);
 

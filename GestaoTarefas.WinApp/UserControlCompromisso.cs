@@ -28,10 +28,9 @@ namespace GestaoTarefas.WinApp
         }
 
         private void btnInserirCompromisso_Click(object sender, EventArgs e)
-        { 
-            CadastroCompromissos tela = new CadastroCompromissos();
-
-            tela.Compromisso = new Compromisso();
+        {
+            gbFiltros.Visible = false;
+            CadastroCompromissos tela = new CadastroCompromissos(new Compromisso());
 
             var resultado = tela.ShowDialog();
 
@@ -44,6 +43,7 @@ namespace GestaoTarefas.WinApp
 
         private void btnEditarCompromisso_Click(object sender, EventArgs e)
         {
+            gbFiltros.Visible = false;
             Compromisso compromissoSelecionado = (Compromisso)listCompromissos.SelectedItem;
 
             if (compromissoSelecionado == null)
@@ -56,9 +56,7 @@ namespace GestaoTarefas.WinApp
             }
             else
             {
-                CadastroCompromissos tela = new CadastroCompromissos();
-
-                tela.Compromisso = compromissoSelecionado;
+                CadastroCompromissos tela = new CadastroCompromissos(compromissoSelecionado);
 
                 var resultado = tela.ShowDialog();
 
@@ -72,6 +70,7 @@ namespace GestaoTarefas.WinApp
 
         private void btnExcluirCompromisso_Click(object sender, EventArgs e)
         {
+            gbFiltros.Visible = false;
             Compromisso compromissoSelecionado = (Compromisso)listCompromissos.SelectedItem;
 
             if (compromissoSelecionado == null)
@@ -98,12 +97,49 @@ namespace GestaoTarefas.WinApp
 
         private void btnVisualizarCompromissos_Click(object sender, EventArgs e)
         {
+            gbFiltros.Visible = false;
+            List<Compromisso> compromissos = repositorioCompromisso.SelecionarPassados();
 
+            listCompromissos.Items.Clear();
+
+            foreach (var compromisso in compromissos)
+            {
+                listCompromissos.Items.Add(compromisso);
+            }
         }
 
         private void btnVisualizarFuturos_Click(object sender, EventArgs e)
         {
+            gbFiltros.Visible = true;
+            List<Compromisso> compromissos = repositorioCompromisso.SelecionarFuturos();
 
+            listCompromissos.Items.Clear();
+
+            foreach (var compromisso in compromissos)
+            {
+                listCompromissos.Items.Add(compromisso);
+            }
+        }
+
+        private void btnFiltrar_Click(object sender, EventArgs e)
+        {
+            if (dtFiltroDataInicio.Value > dtFiltroDataFinal.Value)
+            {
+                MessageBox.Show("Data/Hora inicial não pode ser maior que Data/Hora final",
+                    "Filtro de Compromissos ",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Exclamation);
+                return;
+            }
+
+            List<Compromisso> compromissosFiltrados = repositorioCompromisso.SelecionarFuturosIntervaloData(dtFiltroDataInicio.Value, dtFiltroDataFinal.Value);
+
+            listCompromissos.Items.Clear();
+
+            foreach (var compromisso in compromissosFiltrados)
+            {
+                listCompromissos.Items.Add(compromisso);
+            }
         }
     }
 }

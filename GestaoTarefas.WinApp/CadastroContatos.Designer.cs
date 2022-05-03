@@ -176,6 +176,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "CadastroContatos";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Cadastro de Contatos";
             this.ResumeLayout(false);
             this.PerformLayout();

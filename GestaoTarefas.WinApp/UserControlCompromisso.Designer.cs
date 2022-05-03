@@ -36,6 +36,13 @@
             this.btnInserirCompromisso = new System.Windows.Forms.Button();
             this.tvwContatosOrdenados = new System.Windows.Forms.TreeView();
             this.btnVisualizarFuturos = new System.Windows.Forms.Button();
+            this.gbFiltros = new System.Windows.Forms.GroupBox();
+            this.btnFiltrar = new System.Windows.Forms.Button();
+            this.dtFiltroDataFinal = new System.Windows.Forms.DateTimePicker();
+            this.label3 = new System.Windows.Forms.Label();
+            this.dtFiltroDataInicio = new System.Windows.Forms.DateTimePicker();
+            this.label1 = new System.Windows.Forms.Label();
+            this.gbFiltros.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnVisualizarPassados
@@ -65,13 +72,16 @@
             // 
             // listCompromissos
             // 
+            this.listCompromissos.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.listCompromissos.BackColor = System.Drawing.Color.Gainsboro;
             this.listCompromissos.ForeColor = System.Drawing.Color.MediumVioletRed;
             this.listCompromissos.FormattingEnabled = true;
             this.listCompromissos.ItemHeight = 19;
             this.listCompromissos.Location = new System.Drawing.Point(220, 83);
             this.listCompromissos.Name = "listCompromissos";
-            this.listCompromissos.Size = new System.Drawing.Size(834, 327);
+            this.listCompromissos.Size = new System.Drawing.Size(1237, 327);
             this.listCompromissos.TabIndex = 32;
             // 
             // btnExcluirCompromisso
@@ -134,10 +144,77 @@
             this.btnVisualizarFuturos.UseVisualStyleBackColor = false;
             this.btnVisualizarFuturos.Click += new System.EventHandler(this.btnVisualizarFuturos_Click);
             // 
+            // gbFiltros
+            // 
+            this.gbFiltros.Controls.Add(this.btnFiltrar);
+            this.gbFiltros.Controls.Add(this.dtFiltroDataFinal);
+            this.gbFiltros.Controls.Add(this.label3);
+            this.gbFiltros.Controls.Add(this.dtFiltroDataInicio);
+            this.gbFiltros.Controls.Add(this.label1);
+            this.gbFiltros.Location = new System.Drawing.Point(218, 3);
+            this.gbFiltros.Name = "gbFiltros";
+            this.gbFiltros.Size = new System.Drawing.Size(1239, 67);
+            this.gbFiltros.TabIndex = 37;
+            this.gbFiltros.TabStop = false;
+            this.gbFiltros.Text = "Filtros";
+            this.gbFiltros.Visible = false;
+            // 
+            // btnFiltrar
+            // 
+            this.btnFiltrar.BackColor = System.Drawing.Color.Gainsboro;
+            this.btnFiltrar.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnFiltrar.ForeColor = System.Drawing.Color.MediumVioletRed;
+            this.btnFiltrar.Location = new System.Drawing.Point(624, 20);
+            this.btnFiltrar.Name = "btnFiltrar";
+            this.btnFiltrar.Size = new System.Drawing.Size(127, 41);
+            this.btnFiltrar.TabIndex = 38;
+            this.btnFiltrar.Text = "Filtrar";
+            this.btnFiltrar.UseVisualStyleBackColor = false;
+            this.btnFiltrar.Click += new System.EventHandler(this.btnFiltrar_Click);
+            // 
+            // dtFiltroDataFinal
+            // 
+            this.dtFiltroDataFinal.CustomFormat = "dd/MM/yyyy hh:mm:ss";
+            this.dtFiltroDataFinal.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtFiltroDataFinal.Location = new System.Drawing.Point(391, 30);
+            this.dtFiltroDataFinal.Name = "dtFiltroDataFinal";
+            this.dtFiltroDataFinal.Size = new System.Drawing.Size(227, 26);
+            this.dtFiltroDataFinal.TabIndex = 3;
+            this.dtFiltroDataFinal.Value = new System.DateTime(2022, 5, 3, 11, 35, 28, 0);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(308, 37);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(73, 19);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "Data Final:";
+            // 
+            // dtFiltroDataInicio
+            // 
+            this.dtFiltroDataInicio.CustomFormat = "dd/MM/yyyy hh:mm:ss";
+            this.dtFiltroDataInicio.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtFiltroDataInicio.Location = new System.Drawing.Point(98, 31);
+            this.dtFiltroDataInicio.Name = "dtFiltroDataInicio";
+            this.dtFiltroDataInicio.Size = new System.Drawing.Size(204, 26);
+            this.dtFiltroDataInicio.TabIndex = 1;
+            this.dtFiltroDataInicio.Value = new System.DateTime(2022, 5, 3, 11, 35, 28, 0);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(15, 37);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(77, 19);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Data Início:";
+            // 
             // UserControlCompromisso
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.gbFiltros);
             this.Controls.Add(this.btnVisualizarFuturos);
             this.Controls.Add(this.btnVisualizarPassados);
             this.Controls.Add(this.label2);
@@ -146,9 +223,10 @@
             this.Controls.Add(this.btnEditarCompromisso);
             this.Controls.Add(this.btnInserirCompromisso);
             this.Controls.Add(this.tvwContatosOrdenados);
-            this.Enabled = false;
             this.Name = "UserControlCompromisso";
-            this.Size = new System.Drawing.Size(1090, 658);
+            this.Size = new System.Drawing.Size(1493, 670);
+            this.gbFiltros.ResumeLayout(false);
+            this.gbFiltros.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -164,5 +242,11 @@
         private System.Windows.Forms.Button btnInserirCompromisso;
         private System.Windows.Forms.TreeView tvwContatosOrdenados;
         private System.Windows.Forms.Button btnVisualizarFuturos;
+        private System.Windows.Forms.GroupBox gbFiltros;
+        private System.Windows.Forms.DateTimePicker dtFiltroDataInicio;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.DateTimePicker dtFiltroDataFinal;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button btnFiltrar;
     }
 }

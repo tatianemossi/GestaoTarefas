@@ -13,8 +13,8 @@ namespace GestaoTarefas.WinApp
 
         public override string ToString()
         {
-            return $"Assunto: {Assunto} - Local: {Local} - Data: {Data} - Horário de Início: {HoraInicio} - " +
-                $"Horário Final: {HoraFinal} - Contato {Contato}";
+            return $"Assunto: {Assunto} - Contato: {Contato?.Nome} - Local: {Local} - Data: {Data.ToString("dd/MM/yyyyy")} - Horário de Início: {HoraInicio.ToString("hh:mm:ss")} - " +
+                $"Horário Final: {HoraFinal.ToString("hh:mm:ss")}";
         }
     }
 }

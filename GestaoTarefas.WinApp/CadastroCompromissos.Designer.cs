@@ -51,7 +51,7 @@
             this.cboxContato.Location = new System.Drawing.Point(167, 185);
             this.cboxContato.Name = "cboxContato";
             this.cboxContato.Size = new System.Drawing.Size(164, 27);
-            this.cboxContato.TabIndex = 31;
+            this.cboxContato.TabIndex = 5;
             // 
             // label5
             // 
@@ -92,7 +92,7 @@
             this.btnCancelar.Location = new System.Drawing.Point(353, 241);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(124, 67);
-            this.btnCancelar.TabIndex = 25;
+            this.btnCancelar.TabIndex = 7;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = false;
             // 
@@ -104,7 +104,7 @@
             this.btnGravar.Location = new System.Drawing.Point(223, 241);
             this.btnGravar.Name = "btnGravar";
             this.btnGravar.Size = new System.Drawing.Size(124, 67);
-            this.btnGravar.TabIndex = 24;
+            this.btnGravar.TabIndex = 6;
             this.btnGravar.Text = "Gravar";
             this.btnGravar.UseVisualStyleBackColor = false;
             this.btnGravar.Click += new System.EventHandler(this.btnGravar_Click);
@@ -115,7 +115,7 @@
             this.txtLocal.Location = new System.Drawing.Point(167, 47);
             this.txtLocal.Name = "txtLocal";
             this.txtLocal.Size = new System.Drawing.Size(347, 26);
-            this.txtLocal.TabIndex = 22;
+            this.txtLocal.TabIndex = 1;
             // 
             // label2
             // 
@@ -153,37 +153,37 @@
             this.txtAssunto.Location = new System.Drawing.Point(167, 15);
             this.txtAssunto.Name = "txtAssunto";
             this.txtAssunto.Size = new System.Drawing.Size(347, 26);
-            this.txtAssunto.TabIndex = 33;
+            this.txtAssunto.TabIndex = 0;
             // 
             // dtData
             // 
             this.dtData.CustomFormat = "dd/mm/yyyy";
-            this.dtData.Enabled = false;
             this.dtData.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtData.Location = new System.Drawing.Point(167, 86);
-            this.dtData.MinDate = new System.DateTime(2022, 5, 2, 17, 16, 28, 0);
+            this.dtData.MinDate = new System.DateTime(2019, 1, 1, 0, 0, 0, 0);
             this.dtData.Name = "dtData";
             this.dtData.Size = new System.Drawing.Size(200, 26);
-            this.dtData.TabIndex = 34;
-            this.dtData.Value = new System.DateTime(2022, 5, 2, 17, 16, 28, 0);
+            this.dtData.TabIndex = 2;
+            this.dtData.Value = new System.DateTime(2022, 5, 3, 11, 17, 16, 0);
             // 
             // dtHoraInicial
             // 
             this.dtHoraInicial.Format = System.Windows.Forms.DateTimePickerFormat.Time;
             this.dtHoraInicial.Location = new System.Drawing.Point(167, 121);
-            this.dtHoraInicial.MinDate = new System.DateTime(2022, 5, 2, 17, 16, 15, 0);
+            this.dtHoraInicial.MinDate = new System.DateTime(2019, 1, 1, 0, 0, 0, 0);
             this.dtHoraInicial.Name = "dtHoraInicial";
             this.dtHoraInicial.Size = new System.Drawing.Size(200, 26);
-            this.dtHoraInicial.TabIndex = 35;
-            this.dtHoraInicial.Value = new System.DateTime(2022, 5, 2, 17, 16, 15, 0);
+            this.dtHoraInicial.TabIndex = 3;
+            this.dtHoraInicial.Value = new System.DateTime(2022, 5, 3, 0, 0, 0, 0);
             // 
             // dtHoraFinal
             // 
             this.dtHoraFinal.Format = System.Windows.Forms.DateTimePickerFormat.Time;
             this.dtHoraFinal.Location = new System.Drawing.Point(167, 153);
+            this.dtHoraFinal.MinDate = new System.DateTime(2019, 1, 1, 0, 0, 0, 0);
             this.dtHoraFinal.Name = "dtHoraFinal";
             this.dtHoraFinal.Size = new System.Drawing.Size(200, 26);
-            this.dtHoraFinal.TabIndex = 36;
+            this.dtHoraFinal.TabIndex = 4;
             // 
             // CadastroCompromissos
             // 
@@ -205,6 +205,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "CadastroCompromissos";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Cadastro de Compromissos";
             this.ResumeLayout(false);
             this.PerformLayout();

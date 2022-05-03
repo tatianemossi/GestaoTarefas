@@ -72,6 +72,7 @@
             this.listContatos.Name = "listContatos";
             this.listContatos.Size = new System.Drawing.Size(834, 327);
             this.listContatos.TabIndex = 25;
+            this.listContatos.DoubleClick += new System.EventHandler(this.btnEditarContato_Click);
             // 
             // btnExcluirContato
             // 
@@ -139,11 +140,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.btnVisualizar);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.listContatos);
             this.Controls.Add(this.btnExcluirContato);
             this.Controls.Add(this.btnEditarContato);
             this.Controls.Add(this.btnInserirContato);
             this.Controls.Add(this.label1);
+            this.Controls.Add(this.listContatos);
             this.Controls.Add(this.tvwContatosOrdenados);
             this.Name = "UserControlContato";
             this.Size = new System.Drawing.Size(1090, 658);

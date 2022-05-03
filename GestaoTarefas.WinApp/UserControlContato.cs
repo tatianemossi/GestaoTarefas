@@ -8,10 +8,12 @@ namespace GestaoTarefas.WinApp
     public partial class UserControlContato : UserControl
     {
         private RepositorioContato repositorioContato;
+        private RepositorioCompromisso repositorioCompromisso;
 
         public UserControlContato()
         {
             repositorioContato = new RepositorioContato();
+            repositorioCompromisso = new RepositorioCompromisso();
             InitializeComponent();
             CarregarContatos();
         }
@@ -84,19 +86,31 @@ namespace GestaoTarefas.WinApp
 
             Contato contatoSelecionado = (Contato)listContatos.SelectedItem;
 
+            var listaCompromissosComContato = repositorioCompromisso.SelecionarPeloNomeContato(contatoSelecionado.Nome);
+
+            if (listaCompromissosComContato.Any(x => x.HoraFinal > DateTime.Now))
+            {
+                MessageBox.Show("Não é possível excluir, pois o contato está relacionado a um compromisso",
+                    "Exclusão de contatos",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Exclamation);
+                return;
+            }
+
             if (contatoSelecionado == null)
             {
                 MessageBox.Show("Favor selecionar um contato",
                     "Exclusão de contatos",
                     MessageBoxButtons.OK,
                     MessageBoxIcon.Exclamation);
+                return;
             }
             else
             {
                 DialogResult resultado = MessageBox.Show("Deseja realmente excluir o contato?",
-                "Exclusão de contatos",
-                MessageBoxButtons.OKCancel,
-                MessageBoxIcon.Question);
+                    "Exclusão de contatos",
+                    MessageBoxButtons.OKCancel,
+                    MessageBoxIcon.Question);
 
                 if (resultado == DialogResult.OK)
                 {
@@ -136,7 +150,7 @@ namespace GestaoTarefas.WinApp
 
             }
 
-            if (nodeCargo == null) 
+            if (nodeCargo == null)
                 tvwContatosOrdenados.Nodes.Add(new TreeNode("Não existem contatos."));
         }
     }

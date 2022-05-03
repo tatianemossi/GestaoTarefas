@@ -107,7 +107,7 @@
             this.Name = "AtualizacaoItensTarefa";
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Atualizacao dos Itens da Tarefa";
             this.ResumeLayout(false);
             this.PerformLayout();

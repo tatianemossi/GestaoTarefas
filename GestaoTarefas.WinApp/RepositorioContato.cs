@@ -1,4 +1,5 @@
-﻿using System.Linq;
+﻿using System;
+using System.Linq;
 
 namespace GestaoTarefas.WinApp
 {
@@ -17,6 +18,11 @@ namespace GestaoTarefas.WinApp
         public bool TelefoneJaExiste(string telefone)
         {
             return registros.Any(x => x.Telefone == telefone);
+        }
+
+        public Contato BuscarPeloNome(string nome)
+        {
+            return registros.FirstOrDefault(x => x.Nome == nome);
         }
     }
 }
