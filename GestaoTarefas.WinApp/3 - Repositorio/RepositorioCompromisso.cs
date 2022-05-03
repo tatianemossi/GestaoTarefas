@@ -16,7 +16,7 @@ namespace GestaoTarefas.WinApp
 
         public List<Compromisso> SelecionarPassados()
         {
-            return registros.Where(x => x.Data < DateTime.Now).ToList();
+            return registros.Where(x => x.HoraFinal < DateTime.Now).ToList();
         }
 
         public List<Compromisso> SelecionarFuturos()

@@ -156,11 +156,6 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button btnAtualizarItens;
-        private System.Windows.Forms.Button btnCadastrarItens;
-        private System.Windows.Forms.Button btnExcluir;
-        private System.Windows.Forms.Button btnEditar;
-        private System.Windows.Forms.Button btnInserir;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ListBox listContatos;
         private System.Windows.Forms.Button btnExcluirContato;

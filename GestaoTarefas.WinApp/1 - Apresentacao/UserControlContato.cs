@@ -146,8 +146,7 @@ namespace GestaoTarefas.WinApp
                 }
 
                 var nodeContato = new TreeNode(contato.Nome);
-                nodeCargo.Nodes.Add(nodeContato);
-
+                nodeCargo?.Nodes.Add(nodeContato);
             }
 
             if (nodeCargo == null)

@@ -101,8 +101,18 @@ namespace GestaoTarefas.WinApp
                 return false;
             }
 
+            var dataFinal = new DateTime(dtData.Value.Year, dtData.Value.Month, dtData.Value.Day,
+                dtHoraFinal.Value.Hour, dtHoraFinal.Value.Minute, dtHoraFinal.Value.Second);
+
+            if (dataFinal < DateTime.Now)
+            {
+                MessageBox.Show("Não é possível adicionar um compromisso com horário retroativo.",
+                    "Adicionando Compromisso", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                return false;
+            }
+
             var compromissosDia = repositorioCompromisso.SelecionarTodosDoDia(dtData.Value);
-            if (compromissosDia.Any(x => x.HoraFinal > dtHoraInicial.Value))
+            if (compromissosDia.Any(x => dtHoraFinal.Value > x.HoraInicio))
             {
                 MessageBox.Show("Já existe um compromisso nesse horário.",
                     "Adicionando Compromisso", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
